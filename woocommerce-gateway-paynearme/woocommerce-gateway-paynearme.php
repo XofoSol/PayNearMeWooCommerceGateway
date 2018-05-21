@@ -98,14 +98,14 @@ function init_paynearme_gateway_class(){
                         'title'       => __( 'Title', 'woocommerce-gateway-paynearme' ),
                         'type'        => 'text',
                         'description' => __( 'Payment method description that the customer will see on your checkout.', 'woocommerce-gateway-paynearme' ),
-                        'default'     => __( 'PayNearMe Cash Payments', 'woocommerce-gateway-paynearme' ),
+                        'default'     => __( 'Cash (PayNearMe)', 'woocommerce-gateway-paynearme' ),
                         'desc_tip'    => true,
                     ),
                     'description' => array(
                         'title'       => __( 'Description', 'woocommerce-gateway-paynearme' ),
                         'type'        => 'textarea',
                         'description' => __( 'Payment method description that the customer will see on your website.', 'woocommerce-gateway-paynearme' ),
-                        'default'     => __( 'PayNearMe lets your company safely and easily do business with the millions of customers who prefer to pay in cash.', 'woocommerce-gateway-paynearme' ),
+                        'default'     => __( 'PayNearMe is an easy way to use cash for making online purchases, paying bills and more. You can pay by scanning a barcode in one of 28,000 stores near you. Once the payment code is scanned by the store cashier, simply hand your payment in cash to the cashier and you will receive a receipt as proof of payment. The payment process in store takes less than 30 seconds.', 'woocommerce-gateway-paynearme' ),
                         'desc_tip'    => true,
                     ),
                     'instructions' => array(
