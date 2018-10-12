@@ -376,8 +376,9 @@ function init_paynearme_gateway_class(){
 add_action( 'woocommerce_thankyou', 'show_paynearme_tracking_url', 20 );
 add_action( 'woocommerce_view_order', 'show_paynearme_tracking_url', 20 );
 function show_paynearme_tracking_url($order_id){
-    if(!empty(get_post_meta($order_id, 'paynearme_tracking_url', true))){
-        echo '<iframe src="'.get_post_meta($order_id, 'paynearme_tracking_url', true).'"></iframe>';
+    $trackingUrl = get_post_meta($order_id, 'paynearme_tracking_url', true);
+    if(!empty($trackingUrl)){
+        echo '<iframe src="'.$trackingUrl.'"></iframe>';
         echo '<style> iframe { width: 100%; max-height: 600px; height: 800px; border: none; margin: 20px; }</style>';
     }
 }
